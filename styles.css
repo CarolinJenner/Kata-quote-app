@@ -1,0 +1,106 @@
+/********** general stylings **********/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-white-02: hsl(41, 57%, 95%);
+  --clr-green-01: hsl(90, 66%, 82%);
+  --clr-green-02: hsl(88, 48%, 50%);
+  --clr-blue-01: hsl(195, 48%, 75%);
+  --clr-blue-02: hsl(195, 59%, 59%);
+}
+
+html {
+  font-family: "Bodoni Moda", serif;
+  font-size: 16px;
+  background-color: var(--clr-white-02);
+}
+
+body {
+  max-width: 60ch;
+  margin: auto;
+  text-align: start;
+}
+
+/********** specific stylings **********/
+
+/********** utilities **********/
+
+/**** sizes ****/
+.max-width-50ch {
+  max-width: 50ch;
+  margin: auto;
+}
+
+/**** boxing ****/
+
+.mrg-l-2rem {
+  margin: 0 0 0 2rem;
+}
+
+.mrg-r-2rem {
+  margin-right: 2rem;
+}
+
+.mrg-bl-4-2rem {
+  margin-block: 4rem 2rem;
+}
+
+.pdg-bl-07rem {
+  padding-block: 0.7rem;
+}
+
+.pdg-il-05rem {
+  padding-inline: 0.5rem;
+}
+
+/**** colours ****/
+
+.clr-bl-01 {
+  color: var(--clr-blue-01);
+}
+
+.clr-bl-02 {
+  color: var(--clr-blue-02);
+}
+
+.clr-gr-01 {
+  color: var(--clr-green-01);
+}
+
+.clr-gr-02 {
+  color: var(--clr-green-02);
+}
+
+/**** background ****/
+
+.bgclr-bl-02 {
+  background-color: var(--clr-blue-02);
+}
+
+/**** border ****/
+.bdr-r-025rem {
+  border-radius: 0.25rem;
+}
+
+.bdr-0 {
+  border: none;
+}
+
+/**** font ****/
+.txt-aln-end {
+  text-align: end;
+}
+/**** flex ****/
+
+.flex-c-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
